@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>DSA Widerstandsproben</title>
+
+	<link rel="stylesheet" href="./milligram.min.css" />
+	<link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+	<h1>DSA Widerstandsproben</h1>
+
+	<main>
+
+		<section>
+
+			<p>Zur Generierung einer Liste von Proben auf Willenskraft um zu sehen, ob einer schlechten Eigenschaft widerstanden wurde. Zum Beispiel, ob ein Charakter umbedingt ersten sien will, oder seiner Neugier nachgibt. Dies soll den Fluss am Spieltisch aufrecht erhalten, damit diese Dinge dort nicht immer ausgewürfelt werden müssen.</p>
+
+			<h3>Einstellungen:</h3>
+
+			<form onsubmit="return generate()">
+
+				<label for="attribute1">Erstes Attribut</label>
+				<input class="remember" id="attribute1" type="number" autofocus="true"/>
+
+				<label for="attribute2">Zweites Attribut</label>
+				<input class="remember" id="attribute2" type="number" />
+
+				<label for="attribute3">Drittes Attribut</label>
+				<input class="remember" id="attribute3" type="number" />
+
+				<label for="ability">Fertigkeits Wert</label>
+				<input class="remember" type="number" id="ability" />
+
+				<div class="">
+					<label for="count">Anzahl Proben:</label>
+					<input class="remember" id="count" value="30" type="number" />
+				</div>
+
+				<small>Einstellungen werden automatisch für deinen nächsten Besuch gespeichert.</small><br />
+
+				<input type="submit" value="generieren" />
+			</form>
+		</section>
+
+		<!-- Result -->
+		<section id="result">
+
+		</section>
+	</main>
+
+	<footer>
+		Made by <a href="http://hendrikwallbaum.de">Hendrik Wallbaum</a> | Contribute on <a href="https://github.com/HoverBaum/DSA-wuerfel">GitHub</a>
+	</footer>
+
+	<script src="./js/dice.js"></script>
+	<script src="./js/remember.js"></script>
+
+</body>
+
+</html>
