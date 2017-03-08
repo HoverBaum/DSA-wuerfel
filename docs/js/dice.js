@@ -40,9 +40,10 @@ function generate() {
 
 	//Display the results
 	const resultsContainer = document.querySelector('#result')
-	resultsContainer.innerHTML = '<ul>' + results.reduce((html, result) => {
-		return html += `<li>${(result.remainingFW >= 0) ? 'Widerstanden' : 'NICHT widerstanden'} <br/><small>Übrige FW: ${result.remainingFW} | Ergebnisse: ${result.rolls}</small></li>`
-	}, '') + '</ul>'
+	const printCheckboxes = document.querySelector('#printCheckboxes').checked
+	resultsContainer.innerHTML = '<dl>' + results.reduce((html, result, index) => {
+		return html += `<dt><label><input type="checkbox" class="list-checkbox ${printCheckboxes ? '' : 'no-print'}"> ${(result.remainingFW >= 0) ? 'Widerstanden' : 'NICHT widerstanden'} <br/><small>Übrige FW: ${result.remainingFW} | Ergebnisse: ${result.rolls}</small></label></dt>`
+	}, '') + '</dl>'
 
 	return false
 }

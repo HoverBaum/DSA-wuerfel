@@ -31,8 +31,20 @@ footer {
 	padding: 1rem;
 }
 
+.list-checkbox {
+	margin: 0;
+}
+
 @media print {
 	.no-print {
+		display: none;
+	}
+
+	/*
+		Checkboxes need seperate treatment because input[type='checkbox'] is more
+		specific than .no-print thus overruling it.
+	 */
+	#result input[type='checkbox'].no-print {
 		display: none;
 	}
 }

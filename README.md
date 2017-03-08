@@ -10,8 +10,10 @@ Bei Nachteilen wie *Neugier* oder *Erster* kann es nervig sein, während der Run
 
 - [x] X Proben ablegen und Liste generieren
 - [x] Einstellungen merken
-- [x] CSS Optimierung für Print (alles außer Liste ausblenden)
-- [ ] Ansicht für Handys (wahrscheinlich eine Probe zur Zeit)
+- [x] Elemente bei Druck verstecken (alles außer Liste ausblenden)
+- [x] Ansicht für Handys optimieren
+- [x] Mit und ohne Checkboxen drucken
+- [ ] Liste platzsparender drucken
 
 ## "Documentation"
 

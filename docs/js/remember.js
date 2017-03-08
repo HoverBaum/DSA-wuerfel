@@ -18,6 +18,11 @@ for(let i = 0; i < toRemember.length; i++){
 
 		//Set value to remembered one
 		elm.value = found.value
+
+		//Handle checkboxes
+		if(elm.type && elm.type === 'checkbox') {
+			elm.checked = found.value
+		}
 	} else {
 		remember.push({
 			id: elm.id,
@@ -28,10 +33,14 @@ for(let i = 0; i < toRemember.length; i++){
 
 	//Listen for changes and save them.
 	elm.addEventListener('change', event => {
-		console.log(event);
 		remember.map(remembered => {
 			if(remembered.id === event.target.id) {
 				remembered.value = event.target.value
+
+				//Handle checkboxes
+				if(event.target.type && event.target.type === 'checkbox') {
+					remembered.value = event.target.checked
+				}
 			}
 			return remembered
 		})
