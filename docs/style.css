@@ -27,6 +27,10 @@ footer {
 	padding: 1rem;
 }
 
+.padded {
+	padding: 1rem;
+}
+
 @media print {
 	.no-print {
 		display: none;
