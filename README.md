@@ -1,4 +1,4 @@
-# DSA Widerstandsproben
+# [DSA Widerstandsproben](https://hoverbaum.github.io/DSA-wuerfel/)
 
 Simple Website zum generieren einer Liste von Widerstandsproben für DSA Runden.
 
