@@ -8,7 +8,7 @@ Bei Nachteilen wie *Neugier* oder *Erster* kann es nervig sein, während der Run
 
 - [x] X Proben ablegen und Liste generieren
 - [x] Einstellungen merken
-- [ ] CSS Optimierung für Print (alles außer Liste ausblenden)
+- [x] CSS Optimierung für Print (alles außer Liste ausblenden)
 - [ ] Ansicht für Handys (wahrscheinlich eine Probe zur Zeit)
 
 ## "Documentation"
